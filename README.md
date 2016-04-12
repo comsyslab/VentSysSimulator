@@ -1,8 +1,10 @@
 # Ventilation System Simulator
 This repository contains the ventilation system simulator based on the affinity laws with tunable exponents. 
-Different components have been models in this simulator: ventilation system (with exhaust and supply fan), 
-indoor CO2 model, household loads (using BehavSim), residential buildings and demand response controller.
- 
+The different components modelled in this simulator are: ventilation system (with exhaust and supply fan), 
+indoor CO2 model, household loads (using BehavSim), residential buildings and demand response controller. 
+For details on the model please check:
+
+Sergi Rotger-Griful, Rune Hylsberg Jacobsen, Dat Nguyen, Gorm Sørensen, Demand response potential of ventilation systems in residential buildings, Energy and Buildings, Volume 121, 1 June 2016, Pages 1-10, ISSN 0378-7788, http://dx.doi.org/10.1016/j.enbuild.2016.03.061.
 
 Version 1.0 developed by Sergi Rotger Griful <srgr@eng.au.dk> in collaboration with Dat Nguyen <nguyen763@gmail.com> 
 on 23-10-2015.
