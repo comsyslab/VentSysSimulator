@@ -20,7 +20,7 @@ class Data_formatting(object):
         data_files = [x for x in os.walk('%s/%s' % (directory, folder))]
         print data_files
         data_files_format = data_files[0][2]
-        data_files_format.remove('desktop.ini')
+        data_files_format.remove('desktop.ini') # file that appears when using GoogleDrive
         print data_files_format
 
         # initialising dictionary for data handling
@@ -68,10 +68,9 @@ class Data_formatting(object):
 
 if __name__ == "__main__":
     f_path = os.path.dirname(os.path.abspath('__file__'))
-    path_files = os.path.join(f_path, 'household-loads') #r'C:\Users\srgr\Desktop\household-data-1000\results'#
+    path_files = os.path.join(f_path, 'household-loads') 
     print 'Extract data from: %s' % path_files
     path_destination = os.path.join(f_path, 'results')
-    #path_destination = os.path.join(path_files, r'..\1000-houseloads')
     print 'Send data to: %s' % path_destination
     x = Data_formatting(path=path_files, destination_path=path_destination)
     x.data_format()
